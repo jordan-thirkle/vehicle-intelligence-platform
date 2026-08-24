@@ -52,4 +52,27 @@ See [`docs/reference-vehicles/FG11-YKC.md`](docs/reference-vehicles/FG11-YKC.md)
 
 ## Status
 
-**Research / foundation.** No production integrations are claimed yet. Data-source availability, licensing and API access must be verified before an adapter is represented as live.
+**Interactive v0.1 prototype.** The fixture-backed vertical slice implements deterministic VRM/VIN validation, evidence-backed Mechanical DNA and a structured diagnostic session for Reference Vehicle #000001. It deliberately claims no live production integrations; data-source availability, licensing and API access must be verified before an adapter is represented as live.
+
+## Run locally
+
+```bash
+npm install
+npm test
+npm run dev
+```
+
+Create a production bundle with `npm run build`.
+
+### Prototype routes
+
+- `/free-car-check` — organic-search acquisition page, free lookup, transparent pricing and prototype signup flow;
+- `/mot-history-check` — official-MOT-history intent page with advisory/repair continuity positioning;
+- `/vehicle-passport` — ownership-lifecycle intent page for the permanent evidence record;
+- `/passport` — Vehicle Passport, Mechanical DNA, ownership timeline and diagnostic workspace.
+
+The Passport now supports owner-observed physical component identifiers, local diagnostic and ownership records, and a portable versioned JSON export. These records preserve their evidence level and never convert an owner observation into garage or manufacturer verification.
+
+The production build pre-renders the acquisition routes so useful headings, copy, FAQs, pricing and internal links exist in raw HTML before JavaScript runs.
+
+Before public deployment, replace the `.example` canonical and sitemap host with the chosen production domain, then connect real authentication, consent storage, analytics and payments behind the existing prototype boundaries.

@@ -1,0 +1,7 @@
+[
+  { "name": "HPI Check", "urls": ["https://www.home.hpicheck.com/car-history-check/"] },
+  { "name": "Total Car Check", "urls": ["https://totalcarcheck.co.uk/", "https://totalcarcheck.co.uk/Prices"] },
+  { "name": "VCheck", "urls": ["https://www.vcheck.uk/", "https://www.vcheck.uk/bundles"] },
+  { "name": "MotorCheck", "urls": ["https://www.motorcheck.co.uk/"] },
+  { "name": "carVertical", "urls": ["https://www.carvertical.com/gb", "https://www.carvertical.com/gb/pricing"] }
+]

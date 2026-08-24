@@ -1,0 +1,17 @@
+{
+  "name": "vehicle-intelligence-platform",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "test": "node --test",
+    "build": "vite build && node scripts/prerender.mjs",
+    "seo:check": "node scripts/check-seo.mjs",
+    "competitive:scan": "node scripts/competitive-scan.mjs",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^7.1.3"
+  }
+}

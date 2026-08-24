@@ -1,0 +1,28 @@
+name: Competitive marketing scan
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 7 * * 1"
+
+permissions:
+  contents: read
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run competitive:scan
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: competitive-marketing-${{ github.run_id }}
+          path: artifacts/competitive-marketing/
+          retention-days: 30

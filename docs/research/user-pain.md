@@ -26,3 +26,8 @@ Response: separate factory candidate from current installed component and suppor
 
 ## “AI confidently gave me the wrong technical specification.”
 Response: provenance is visible; safety-critical specifications require appropriate technical authority and cannot be promoted from unsupported AI inference.
+
+## “I maintained it, but I can't prove what was done.”
+Response: provide a permanent ownership timeline for maintenance, repairs, inspections, modifications and diagnostic outcomes. Preserve useful owner-entered history while distinguishing it from invoice-evidenced, garage-verified and authoritative records.
+
+The evidence-level distinction is essential: self-maintained owners need continuity, while future buyers need protection from a user simply typing “full service history.”
